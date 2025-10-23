@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Mua vé xem phim</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h2>🎬 Mua vé xem phim</h2>
+    <form id="ticketForm">
+      <div class="form-group">
+        <label>Ngày chiếu</label>
+        <input type="date" id="ngayChieu">
+      </div>
+
+      <div class="form-group">
+        <label>Phim</label>
+        <select id="phim">
+          <option value="">-- Chọn phim --</option>
+          <option value="Mắt biếc">Mắt biếc</option>
+          <option value="Về nhà đi con">Về nhà đi con</option>
+          <option value="Yêu em bất chấp">Yêu em bất chấp</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Suất chiếu</label>
+        <select id="suatChieu">
+          <option value="">-- Chọn suất chiếu --</option>
+          <option value="8h – 12h">8h – 12h</option>
+          <option value="12h – 17h">12h – 17h</option>
+          <option value="17h – 20h">17h – 20h</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Phòng chiếu</label>
+        <select id="phongChieu">
+          <option value="">-- Chọn phòng chiếu --</option>
+          <option value="A">A</option>
+          <option value="B">B</option>
+          <option value="Vàng">Vàng</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Chọn chỗ ngồi</label>
+        <select id="choNgoi" multiple size="4">
+          <option value="Ghế 01">Ghế 01</option>
+          <option value="Ghế 02">Ghế 02</option>
+          <option value="Ghế 03">Ghế 03</option>
+          <option value="Ghế 04">Ghế 04</option>
+        </select>
+      </div>
+
+      <div class="btn-container">
+        <button type="button" id="muaVe">🎟️ Mua vé</button>
+      </div>
+    </form>
+
+    <div id="thongTinVe" class="fade-box"></div>
+  </div>
+</body>
+</html>
